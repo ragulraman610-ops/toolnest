@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <meta name="description" content="What the current ToolNest pages do with information entered into its tools.">
+  <title>Privacy | ToolNest</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="ToolNest home"><span class="brand-mark">tn</span><span>toolnest<span class="brand-period">.</span></span></a><nav class="header-nav" aria-label="Main navigation"><a class="nav-link" href="index.html#tool-grid">All tools</a><a class="nav-link active" href="privacy.html">Privacy</a></nav><a class="header-note" href="index.html#tool-grid"><span class="status-dot"></span> 8 free tools</a></header>
+  <main class="content-page">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-separator">/</span><span>Privacy</span></div>
+    <header class="content-heading"><p class="eyebrow"><span class="eyebrow-line"></span> PRIVACY</p><h1>What happens to your inputs?</h1><p>This page describes the behavior visible in the current ToolNest site code.</p></header>
+    <div class="content-body">
+      <section class="content-section"><h2>Calculators and word counter</h2><p>The age, percentage, GST, and EMI calculators, along with the word counter, calculate results in the browser using the values you enter. The current app code does not send these values to a ToolNest application backend or save them in browser storage.</p></section>
+      <section class="content-section"><h2>Image tools</h2><p>The image resizer and compressor read the selected image in the browser and draw the output using a canvas. The current app code does not upload the selected image to a ToolNest application backend. The resulting download is created in the browser.</p></section>
+      <section class="content-section"><h2>QR generator and external services</h2><p>The QR generator sends the text or link you enter to <code>api.qrserver.com</code> in a request for a QR image. Do not enter information into that tool unless you are comfortable sending it to that service. The service's own practices are outside the ToolNest code; consult its current privacy information for details.</p><p>The pages also load font stylesheets and font files from Google Fonts (<code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>).</p></section>
+      <section class="content-section"><h2>Website hosting and your browser</h2><p>When you open the site, your browser requests its pages and files from the configured web host and makes the external font and, when used, QR-service requests described above. This page does not make claims about what those providers log, retain, or otherwise do with request data; check their current documentation for that information.</p><p>The site currently has no login, analytics code, cookie banner, contact form, or ToolNest application backend in its files. This is a description of the current implementation, not a statement about your browser, network, or host provider.</p></section>
+      <section class="content-section"><h2>Questions</h2><p>The <a href="contact.html">Contact page</a> contains a placeholder for the site owner's email. It must be replaced with a real address before it can be used.</p></section>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">tn</span><span>toolnest<span class="brand-period">.</span></span></a><span>Useful things, kept simple.</span><span>Free to use <span class="footer-spark">✳</span></span></footer>
+</body>
+</html>
