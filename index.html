@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <meta name="description" content="A practical collection of free online calculators and everyday tools. Simple, fast, and private by design.">
+  <title>ToolNest - useful tools, all in one place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ToolNest home"><span class="brand-mark">tn</span><span>toolnest<span class="brand-period">.</span></span></a>
+    <nav class="header-nav" aria-label="Main navigation"><a class="nav-link active" href="index.html">All tools</a><a class="nav-link" href="#tool-grid">Explore</a></nav>
+    <a class="header-note" href="#tool-grid"><span class="status-dot"></span> 8 free tools</a>
+  </header>
+
+  <main>
+    <section class="home-intro">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE EVERYDAY TOOLKIT</p>
+        <h1>Small tools.<br><span>Clear answers.</span></h1>
+        <p class="intro-text">Useful online tools for the little calculations and tasks that make up your day. No sign-up, no fuss.</p>
+      </div>
+      <div class="intro-side" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-center"><span>tn</span></div>
+        <span class="orbit-label label-top">everyday, made easier</span><span class="orbit-label label-bottom">your tools live here</span>
+      </div>
+    </section>
+
+    <section class="tools-section" id="tool-grid">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR TOOL</p><h2>What can we help with?</h2></div>
+        <label class="search-box"><span class="search-icon" aria-hidden="true"></span><span class="visually-hidden">Search tools</span><input id="tool-search" type="search" placeholder="Search tools" autocomplete="off"></label>
+      </div>
+      <div class="filter-row" aria-label="Filter by category">
+        <button class="filter-chip selected" type="button" data-filter="all" aria-pressed="true">All tools <span>8</span></button>
+        <button class="filter-chip" type="button" data-filter="calculators" aria-pressed="false">Calculators</button>
+        <button class="filter-chip" type="button" data-filter="writing" aria-pressed="false">Writing</button>
+        <button class="filter-chip" type="button" data-filter="images" aria-pressed="false">Images</button>
+      </div>
+      <div class="tool-grid" id="tool-list">
+        <a class="tool-card" href="tools/age.html" data-category="calculators" data-name="age calculator birthday years months days"><span class="tool-icon icon-coral">01</span><span class="tool-card-copy"><span class="tool-category">CALCULATOR</span><strong>Age calculator</strong><span>Find your exact age and next birthday.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/percentage.html" data-category="calculators" data-name="percentage calculator percent change"><span class="tool-icon icon-blue">02</span><span class="tool-card-copy"><span class="tool-category">CALCULATOR</span><strong>Percentage calculator</strong><span>Work out percentages, changes, and ratios.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/gst.html" data-category="calculators" data-name="gst calculator tax goods services"><span class="tool-icon icon-yellow">03</span><span class="tool-card-copy"><span class="tool-category">CALCULATOR</span><strong>GST calculator</strong><span>Add or remove tax from any amount.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/emi.html" data-category="calculators" data-name="emi loan calculator monthly payment interest"><span class="tool-icon icon-green">04</span><span class="tool-card-copy"><span class="tool-category">CALCULATOR</span><strong>EMI calculator</strong><span>Estimate monthly loan payments and interest.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/word-counter.html" data-category="writing" data-name="word counter text writing characters"><span class="tool-icon icon-lilac">05</span><span class="tool-card-copy"><span class="tool-category">WRITING</span><strong>Word counter</strong><span>Count words, characters, and reading time.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/qr-generator.html" data-category="images" data-name="qr code generator link wifi text"><span class="tool-icon icon-pink">06</span><span class="tool-card-copy"><span class="tool-category">IMAGE</span><strong>QR generator</strong><span>Turn a link or short message into a QR code.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/image-resizer.html" data-category="images" data-name="image resizer photo resize dimensions"><span class="tool-icon icon-blue">07</span><span class="tool-card-copy"><span class="tool-category">IMAGE</span><strong>Image resizer</strong><span>Resize an image to the dimensions you need.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+        <a class="tool-card" href="tools/image-compressor.html" data-category="images" data-name="image compressor reduce photo file size"><span class="tool-icon icon-yellow">08</span><span class="tool-card-copy"><span class="tool-category">IMAGE</span><strong>Image compressor</strong><span>Make image files smaller in your browser.</span></span><span class="card-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No tools match that search. Try a different word.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">tn</span><span>toolnest<span class="brand-period">.</span></span></a><span>Useful things, kept simple.</span><span>Free to use <span class="footer-spark">✳</span></span></footer>
+</body>
+</html>
